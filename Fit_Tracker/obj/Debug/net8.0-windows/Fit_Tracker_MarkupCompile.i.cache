@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\panla\dev\Systemutveckling\Fit_Tracker\Fit_Tracker\App.xaml
-11407045341
+3-2139141278
 
-61766591067
+101674902780
 198-556154604
-MainWindow.xaml;
+MainWindow.xaml;ViewModels\Register\Register.xaml;ViewModels\WorkoutsWindow\WorkoutsWindow.xaml;
 
 False
 

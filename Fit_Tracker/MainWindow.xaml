@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:Fit_Tracker"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid x:Name="GridWin">
+        <Border Background="#D3D3D3" />
+        <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <Label Content="FIT-TRACKER"  FontSize="50" FontWeight="Bold" Foreground="#DC143C"/>
+            <TextBox x:Name="UserName" Text="Username" Margin="0,5" Padding="5" BorderThickness="2" />
+            <TextBox x:Name="PassWord" Text="Password" Margin="0,5" Padding="5" BorderThickness="2" />
+            <Button x:Name="SignInBtn" Content="Sign in" Background="#DC143C" Foreground="White" Click="SignInBtn_Click" FontWeight="Bold" />
+            <Button x:Name="RegisterBtn" Content="Register" Background="#DC143C" Foreground="White" Click="RegisterBtn_Click" Margin="0,5" FontWeight="Bold"/>
+        </StackPanel>
     </Grid>
 </Window>

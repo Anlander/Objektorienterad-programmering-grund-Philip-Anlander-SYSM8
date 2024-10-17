@@ -1,24 +1,29 @@
-﻿using System.Text;
+﻿using Fit_Tracker.ViewModels.Register;
+using Fit_Tracker.ViewModels.WorkoutsWindow;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Fit_Tracker
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void SignInBtn_Click(object sender, RoutedEventArgs e)
+        {
+            WorkoutsWindow workOut = new WorkoutsWindow();
+            workOut.Show();
+            Close();
+
+        }
+        private void RegisterBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Register register = new ViewModels.Register.Register();
+            register.Show();
+            Close();
         }
     }
 }

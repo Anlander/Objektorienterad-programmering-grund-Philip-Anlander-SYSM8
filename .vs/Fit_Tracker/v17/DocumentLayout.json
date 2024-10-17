@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\modules\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\modules\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\modules\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\modules\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\viewmodels\\workoutswindow\\workoutswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\viewmodels\\workoutswindow\\workoutswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\viewmodels\\register\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\viewmodels\\register\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +39,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Workout.cs",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\Modules\\Workout.cs",
+              "RelativeDocumentMoniker": "Fit_Tracker\\Modules\\Workout.cs",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\Modules\\Workout.cs",
+              "RelativeToolTip": "Fit_Tracker\\Modules\\Workout.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T08:43:10.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WorkoutsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\ViewModels\\WorkoutsWindow\\WorkoutsWindow.xaml",
+              "RelativeDocumentMoniker": "Fit_Tracker\\ViewModels\\WorkoutsWindow\\WorkoutsWindow.xaml",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\ViewModels\\WorkoutsWindow\\WorkoutsWindow.xaml",
+              "RelativeToolTip": "Fit_Tracker\\ViewModels\\WorkoutsWindow\\WorkoutsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-17T08:41:29.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\Modules\\Person.cs",
+              "RelativeDocumentMoniker": "Fit_Tracker\\Modules\\Person.cs",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\Modules\\Person.cs",
+              "RelativeToolTip": "Fit_Tracker\\Modules\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T08:14:27.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.xaml",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\ViewModels\\Register\\Register.xaml",
+              "RelativeDocumentMoniker": "Fit_Tracker\\ViewModels\\Register\\Register.xaml",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\ViewModels\\Register\\Register.xaml",
+              "RelativeToolTip": "Fit_Tracker\\ViewModels\\Register\\Register.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-17T08:04:18.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Fit_Tracker\\MainWindow.xaml",
@@ -34,13 +100,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Fit_Tracker\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\MainWindow.xaml.cs",
               "RelativeToolTip": "Fit_Tracker\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T07:40:06.797Z",
               "EditorCaption": ""
