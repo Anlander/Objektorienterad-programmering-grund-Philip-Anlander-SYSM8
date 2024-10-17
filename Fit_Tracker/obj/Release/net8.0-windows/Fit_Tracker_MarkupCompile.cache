@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\panla\dev\Systemutveckling\Fit_Tracker\Fit_Tracker\obj\Release\net8.0-windows\
+C:\Users\fille\dev\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\Fit_Tracker\obj\Release\net8.0-windows\
 Fit_Tracker
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-C:\Users\panla\dev\Systemutveckling\Fit_Tracker\Fit_Tracker\App.xaml
-3-2139141278
+C:\Users\fille\dev\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\Fit_Tracker\App.xaml
+31586424729
 
-8-722259945
-198-556154604
-MainWindow.xaml;ViewModels\Register\Register.xaml;ViewModels\WorkoutsWindow\WorkoutsWindow.xaml;
+1020788453
+198-1509178875
+MainWindow.xaml;Pages\Register\Register.xaml;Pages\WorkoutsWindow\WorkoutsWindow.xaml;
 
 True
 

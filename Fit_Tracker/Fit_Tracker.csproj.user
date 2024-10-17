@@ -7,10 +7,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="ViewModels\Register\Register.xaml.cs">
+    <Compile Update="Pages\Register\Register.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ViewModels\WorkoutsWindow\WorkoutsWindow.xaml.cs">
+    <Compile Update="Pages\WorkoutsWindow\WorkoutsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -18,10 +18,10 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ViewModels\Register\Register.xaml">
+    <Page Update="Pages\Register\Register.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ViewModels\WorkoutsWindow\WorkoutsWindow.xaml">
+    <Page Update="Pages\WorkoutsWindow\WorkoutsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

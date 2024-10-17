@@ -5,8 +5,8 @@
     //Skapa en abstract person
     public abstract class Person
     {
-        private string Username { get; set; }
-        private string Password { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
 
         public Person(string Username, string Password)
         {
@@ -14,7 +14,8 @@
             this.Password = Password;
         }
 
-        public abstract bool SignIn();
+        //public abstract bool SignIn(string Username, string Password);
+        public abstract void SignIn();
     }
 
 
@@ -27,9 +28,13 @@
             this.Country = Country;
         }
 
-        public override bool SignIn()
+        //public override bool SignIn(string Username, string Password)
+        //{
+        //    return true;
+        //}   
+        public override void SignIn()
         {
-            return SignIn();
+
         }
     }
 
