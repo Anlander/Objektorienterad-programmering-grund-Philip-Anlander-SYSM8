@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="WorkoutsWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="WorkoutWindow" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <ListView ItemsSource="{Binding UserWorkouts}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Type" DisplayMemberBinding="{Binding Type}" />
+                    <GridViewColumn Header="Duration" DisplayMemberBinding="{Binding Duration}" />
+                    <GridViewColumn Header="Calories Burned" DisplayMemberBinding="{Binding CalobriesBurned}" />
+                    <GridViewColumn Header="Notes" DisplayMemberBinding="{Binding Notes}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

@@ -13,6 +13,9 @@ namespace Fit_Tracker.ViewModel
         public MainWindowViewModel()
         {
             Users = new ObservableCollection<User>();
+
+            Users.Add(new User("username", "password", "Sweden"));
+            Users.Add(new User("admin", "password", "Sweden"));
             Users.Add(new User("username", "password", "Sweden"));
         }
 

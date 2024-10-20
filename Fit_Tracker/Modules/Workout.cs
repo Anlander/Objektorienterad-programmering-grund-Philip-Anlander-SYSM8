@@ -42,11 +42,11 @@
         }
     }
 
-    public class StrenghtWorkout : Workout
+    public class StrengthWorkout : Workout
     {
 
         public int Repetitations { get; set; }
-        public StrenghtWorkout(DateTime date, string type, TimeSpan duration,
+        public StrengthWorkout(DateTime date, string type, TimeSpan duration,
             int calobriesBurned, string notes, int Repetitations)
             : base(date, type, duration, calobriesBurned, notes)
         {

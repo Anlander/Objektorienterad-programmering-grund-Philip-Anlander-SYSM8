@@ -1,4 +1,7 @@
-﻿namespace Fit_Tracker.Classes
+﻿using Fit_Tracker.Modules;
+using System.Collections.ObjectModel;
+
+namespace Fit_Tracker.Classes
 {
 
 
@@ -15,26 +18,24 @@
         }
 
         //public abstract bool SignIn(string Username, string Password);
-        public abstract void SignIn();
+        public abstract bool SignIn();
     }
 
 
     // Skapa User
     public class User : Person
     {
+        public ObservableCollection<Workout> Workouts { get; set; }
         public string Country { get; set; }
         public User(string Username, string Password, string Country) : base(Username, Password)
         {
             this.Country = Country;
+            Workouts = new ObservableCollection<Workout>();
         }
 
-        //public override bool SignIn(string Username, string Password)
-        //{
-        //    return true;
-        //}   
-        public override void SignIn()
+        public override bool SignIn()
         {
-
+            return true;
         }
     }
 
