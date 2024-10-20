@@ -6,7 +6,7 @@
         public DateTime Date { get; set; }
         public string Type { get; set; }
         public TimeSpan Duration { get; set; }
-        public int CalobriesBurned { get; set; }
+        public int CaloriesBurned { get; set; }
         public string Notes { get; set; }
 
         // Abstrakt som måste implementeras i subklasserna
@@ -16,12 +16,12 @@
 
 
         // Konstruktor
-        public Workout(DateTime date, string type, TimeSpan duration, int calobriesBurned, string notes)
+        public Workout(DateTime date, string type, TimeSpan duration, int caloriesBurned, string notes)
         {
             Date = date;
             Type = type;
             Duration = duration;
-            CalobriesBurned = calobriesBurned;
+            CaloriesBurned = caloriesBurned;
             Notes = notes;
         }
     }
@@ -31,10 +31,10 @@
 
         public int Distance { get; set; }
         public CardioWorkout(DateTime date, string type, TimeSpan duration,
-            int calobriesBurned, string notes, int Distance)
-            : base(date, type, duration, calobriesBurned, notes)
+            int caloriesBurned, string notes, int distance)
+            : base(date, type, duration, caloriesBurned, notes)
         {
-            this.Distance = Distance;
+            this.Distance = distance;
         }
         public override int CalculateCalobriesBurned()
         {
@@ -47,15 +47,15 @@
 
         public int Repetitations { get; set; }
         public StrengthWorkout(DateTime date, string type, TimeSpan duration,
-            int calobriesBurned, string notes, int Repetitations)
-            : base(date, type, duration, calobriesBurned, notes)
+            int caloriesBurned, string notes, int Repetitations)
+            : base(date, type, duration, caloriesBurned, notes)
         {
             this.Repetitations = Repetitations;
         }
 
         public override int CalculateCalobriesBurned()
         {
-            return Repetitations / CalobriesBurned;
+            return Repetitations / CaloriesBurned;
         }
     }
 }

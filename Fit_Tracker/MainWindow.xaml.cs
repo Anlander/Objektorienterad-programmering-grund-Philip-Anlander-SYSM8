@@ -14,7 +14,6 @@ namespace Fit_Tracker
         {
 
             InitializeComponent();
-            //DataContext = new MainWindowViewModel();
             MainWindowViewModel viewModel = new MainWindowViewModel();
             DataContext = viewModel;
 
@@ -31,7 +30,6 @@ namespace Fit_Tracker
 
             if (userExist != null)
             {
-                MessageBox.Show("User Exists!");
                 WorkoutsWindow workOut = new WorkoutsWindow(userExist);
                 workOut.Show();
                 Close();

@@ -3,19 +3,36 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Fit_Tracker.Pages.WorkoutsWindow"
+       
+        xmlns:local="clr-namespace:Fit_Tracker.Modules" xmlns:viewmodel="clr-namespace:Fit_Tracker.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:WorkOutViewModel}"
         mc:Ignorable="d"
         Title="WorkoutsWindow" Height="450" Width="800">
     <Grid>
-        <ListView ItemsSource="{Binding UserWorkouts}">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="300" />
+        </Grid.ColumnDefinitions>
+        <ListView Name="WorkoutList" ItemsSource="{Binding Workouts}" SelectedItem="{Binding SelectedWorkout}">
             <ListView.View>
                 <GridView>
+                    <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date}" />
                     <GridViewColumn Header="Type" DisplayMemberBinding="{Binding Type}" />
-                    <GridViewColumn Header="Duration" DisplayMemberBinding="{Binding Duration}" />
-                    <GridViewColumn Header="Calories Burned" DisplayMemberBinding="{Binding CalobriesBurned}" />
-                    <GridViewColumn Header="Notes" DisplayMemberBinding="{Binding Notes}" />
+                    <!-- <GridViewColumn Header="Duration" DisplayMemberBinding="{Binding Duration}" />
+                    <GridViewColumn Header="Calories Burned" DisplayMemberBinding="{Binding CaloriesBurned}" />
+                    <GridViewColumn Header="Notes" DisplayMemberBinding="{Binding Notes}" /> -->
                 </GridView>
             </ListView.View>
         </ListView>
+
+        <StackPanel Grid.Column="1">
+            <Button x:Name="details" Content="Show details" Click="details_Click" />
+            <Button x:Name="Add" Content="Add" Click="Add_Click" />
+            <Button x:Name="Remove" Content="Remove" Click="Remove_Click" />
+            <Button x:Name="Edit" Content="Edit" Click="Edit_Click" />
+        </StackPanel>
     </Grid>
 </Window>

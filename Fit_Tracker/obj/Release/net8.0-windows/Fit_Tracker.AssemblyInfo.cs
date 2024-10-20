@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fit_Tracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0ab3d9ce562b204847274609734afa2ffcd5308")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6f27acb75b827fb843b63b5191766050af5c101")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fit_Tracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fit_Tracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
