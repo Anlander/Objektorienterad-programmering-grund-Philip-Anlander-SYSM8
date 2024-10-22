@@ -6,6 +6,7 @@ namespace Fit_Tracker.MVVM
     {
         private Action<object> execute;
         private Func<object, bool> canExecute;
+        private Action register;
 
         public event EventHandler? CanExecuteChanged
         {
@@ -18,6 +19,11 @@ namespace Fit_Tracker.MVVM
         {
             this.execute = execute;
             this.canExecute = canExecute;
+        }
+
+        public RelayCommand(Action register)
+        {
+            this.register = register;
         }
 
         public bool CanExecute(object? parameter)

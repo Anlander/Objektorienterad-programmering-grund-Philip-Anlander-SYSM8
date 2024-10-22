@@ -3,20 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-       
+       xmlns:userControls="clr-namespace:Fit_Tracker.MVVM.UserControl"
         xmlns:local="clr-namespace:Fit_Tracker.Modules" xmlns:viewmodel="clr-namespace:Fit_Tracker.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:WorkOutViewModel}"
         mc:Ignorable="d"
         Title="WorkoutsWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="95*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition Width="300" />
         </Grid.ColumnDefinitions>
-        <ListView Name="WorkoutList" ItemsSource="{Binding Workouts}" SelectedItem="{Binding SelectedWorkout}">
+<userControls:UserLogout>
+            <userControls:UserLogout Username="{Binding LoggedInUser.Username}" />
+        </userControls:UserLogout>
+        <ListView Name="WorkoutList" ItemsSource="{Binding Workouts}" SelectedItem="{Binding SelectedWorkout}" Grid.Row="1">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date}" />
@@ -25,7 +29,7 @@
             </ListView.View>
         </ListView>
 
-        <StackPanel Grid.Column="1">
+        <StackPanel Grid.Column="1" Grid.Row="1">
             <Button x:Name="details" Content="Show details" Click="details_Click" />
             <Button x:Name="Add" Content="Add" Click="Add_Workout" />
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="chooseWorkout" Visibility="Collapsed">

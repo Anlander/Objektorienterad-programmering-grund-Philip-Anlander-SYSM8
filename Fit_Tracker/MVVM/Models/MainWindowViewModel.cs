@@ -1,4 +1,5 @@
-﻿using Fit_Tracker.Classes;
+﻿using Fit_Tracker.classes;
+using Fit_Tracker.Classes;
 using Fit_Tracker.Modules;
 using Fit_Tracker.MVVM;
 using System.Collections.ObjectModel;
@@ -8,47 +9,31 @@ namespace Fit_Tracker.ViewModel
     public class MainWindowViewModel : ViewModelBase
     {
         public ObservableCollection<User> Users { get; set; }
-
-
+        private Usermanager userManager;
         private Person selectedItem;
+        private User _loggedInUser;
+
 
         public MainWindowViewModel()
         {
-            Users = new ObservableCollection<User>();
+            userManager = new Usermanager();
+            Users = new ObservableCollection<User>(Usermanager.GetUsers());
+        }
 
+        public void AddUser(string username, string password, string country)
+        {
+            userManager.AddUser(username, password, country);
+            Users.Add(new User(username, password, country));
+        }
 
-            // First User for testing if both workout appear.
-            var sampleUser1 = new User("username", "password", "Sweden");
-
-            sampleUser1.Workouts.Add(new CardioWorkout(date: DateTime.Now,
-                type: "Running",
-                duration: TimeSpan.FromMinutes(30),
-                caloriesBurned: 2000,
-                distance: 200,
-                notes: "Went well!"));
-
-            sampleUser1.Workouts.Add(new StrengthWorkout(date: DateTime.Now,
-               type: "Weight Lift",
-               duration: TimeSpan.FromMinutes(30),
-               caloriesBurned: 200,
-               Repetitations: 20,
-               notes: "Went well!"));
-
-            var sampleUser2 = new User("philip", "123", "Sweden");
-            sampleUser2.Workouts.Add(new CardioWorkout(
-                date: DateTime.Now, type: "Cardio",
-                caloriesBurned: 5000,
-                distance: 500,
-                duration: TimeSpan.FromMinutes(30),
-                notes: "No notes"
-             ));
-
-
-
-
-            Users.Add(sampleUser1);
-            Users.Add(sampleUser2);
-
+        public void AddWorkoutToUser(string username, Workout workout)
+        {
+            Usermanager.AddWorkoutToUser(username, workout);
+            var user = Users.FirstOrDefault(u => u.Username == username);
+            if (user != null)
+            {
+                user.Workouts.Add(workout);
+            }
         }
 
         public Person SelectedItem
@@ -59,7 +44,16 @@ namespace Fit_Tracker.ViewModel
                 selectedItem = value;
                 OnPropertyChanged();
             }
+        }
 
+        public User LoggedInUser
+        {
+            get => _loggedInUser;
+            set
+            {
+                _loggedInUser = value;
+                OnPropertyChanged();
+            }
         }
     }
 }

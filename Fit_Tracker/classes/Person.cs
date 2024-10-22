@@ -17,7 +17,6 @@ namespace Fit_Tracker.Classes
             this.Password = Password;
         }
 
-        //public abstract bool SignIn(string Username, string Password);
         public abstract bool SignIn();
     }
 

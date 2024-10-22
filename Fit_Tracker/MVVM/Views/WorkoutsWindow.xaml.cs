@@ -1,5 +1,6 @@
 ﻿using Fit_Tracker.Classes;
 using Fit_Tracker.Modules;
+using Fit_Tracker.MVVM.UserControl;
 using Fit_Tracker.ViewModel;
 using System.Windows;
 
@@ -8,12 +9,13 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
 
     public partial class WorkoutsWindow : Window
     {
+        public UserLogout UserLogout { get; internal set; }
 
         public WorkoutsWindow(User currentUser)
         {
             InitializeComponent();
             WorkOutViewModel vm = new WorkOutViewModel(currentUser);
-            DataContext = vm;
+            this.DataContext = vm;
         }
 
         private void details_Click(object sender, RoutedEventArgs e)
