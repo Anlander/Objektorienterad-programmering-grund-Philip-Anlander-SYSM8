@@ -44,26 +44,7 @@
                 <TextBox x:Name="distance" Text="{Binding Distance, UpdateSourceTrigger=PropertyChanged}" />
                 <TextBox x:Name="repetitations" Text="{Binding Repetitations, UpdateSourceTrigger=PropertyChanged}" />
             </StackPanel>
-
-            <!--<ContentControl Content="{Binding}">
-                <ContentControl.Resources>
-                    <DataTemplate DataType="{x:Type modules:CardioWorkout}">
-                        <StackPanel>
-                            <TextBlock Text="Distance:" FontWeight="Bold" />
-                            <StackPanel Orientation="Horizontal">
-                                <TextBox x:Name="distance" Text="{Binding Distance, UpdateSourceTrigger=PropertyChanged}" />
-                                <TextBlock Text=" Meters" />
-                            </StackPanel>
-                        </StackPanel>
-                    </DataTemplate>
-                    <DataTemplate DataType="{x:Type modules:StrengthWorkout}">
-                        <StackPanel>
-                            <TextBlock Text="Repetitations:" FontWeight="Bold" />
-                            <TextBox x:Name="repetitations" Text="{Binding Repetitations, UpdateSourceTrigger=PropertyChanged}" />
-                        </StackPanel>
-                    </DataTemplate>
-                </ContentControl.Resources>
-            </ContentControl>-->
+            
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <Button x:Name="edit" Content="Edit" HorizontalAlignment="Right" Width="150" Margin="0,5" 
                         VerticalAlignment="Bottom" Click="Edit_Click" Background="white" Foreground="#DC143C" 

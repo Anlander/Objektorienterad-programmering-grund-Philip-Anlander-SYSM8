@@ -98,6 +98,7 @@ namespace Fit_Tracker.Pages.WorkoutDetailsWindow
             edit.Visibility = Visibility.Visible;
             EnableInputFields(false);
             SetBorderThickness(0);
+            this.Close();
         }
 
 
