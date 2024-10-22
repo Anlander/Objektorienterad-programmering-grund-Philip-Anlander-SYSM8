@@ -9,6 +9,7 @@ namespace Fit_Tracker.ViewModel
     {
         public ObservableCollection<User> Users { get; set; }
 
+
         private Person selectedItem;
 
         public MainWindowViewModel()
@@ -22,22 +23,22 @@ namespace Fit_Tracker.ViewModel
             sampleUser1.Workouts.Add(new CardioWorkout(date: DateTime.Now,
                 type: "Running",
                 duration: TimeSpan.FromMinutes(30),
-                caloriesBurned: 200,
-                distance: 5,
+                caloriesBurned: 2000,
+                distance: 200,
                 notes: "Went well!"));
 
             sampleUser1.Workouts.Add(new StrengthWorkout(date: DateTime.Now,
                type: "Weight Lift",
                duration: TimeSpan.FromMinutes(30),
                caloriesBurned: 200,
-               Repetitations: 5,
+               Repetitations: 20,
                notes: "Went well!"));
 
             var sampleUser2 = new User("philip", "123", "Sweden");
             sampleUser2.Workouts.Add(new CardioWorkout(
                 date: DateTime.Now, type: "Cardio",
-                caloriesBurned: 200,
-                distance: 5,
+                caloriesBurned: 5000,
+                distance: 500,
                 duration: TimeSpan.FromMinutes(30),
                 notes: "No notes"
              ));
@@ -60,6 +61,5 @@ namespace Fit_Tracker.ViewModel
             }
 
         }
-
     }
 }

@@ -11,32 +11,27 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
 
         public WorkoutsWindow(User currentUser)
         {
-
             InitializeComponent();
             WorkOutViewModel vm = new WorkOutViewModel(currentUser);
             DataContext = vm;
-
         }
 
         private void details_Click(object sender, RoutedEventArgs e)
         {
-            if (WorkoutList.SelectedItem is Workout selectedWorkout)
+            if (WorkoutList.SelectedItem is CardioWorkout selectedCardioWorkout)
             {
-                WorkoutDetailsWindow.WorkoutDetailsWindow details = new WorkoutDetailsWindow.WorkoutDetailsWindow(selectedWorkout);
+                WorkoutDetailsWindow.WorkoutDetailsWindow details = new WorkoutDetailsWindow.WorkoutDetailsWindow(selectedCardioWorkout);
+                details.ShowDialog();
+            }
+            else if (WorkoutList.SelectedItem is StrengthWorkout selectedStrengthWorkout)
+            {
+                WorkoutDetailsWindow.WorkoutDetailsWindow details = new WorkoutDetailsWindow.WorkoutDetailsWindow(selectedStrengthWorkout);
                 details.ShowDialog();
             }
             else
             {
-                MessageBox.Show($"there is no selected item");
+                MessageBox.Show($"There is no selected item");
             }
-
-
-
-        }
-
-        private void Add_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void Remove_Click(object sender, RoutedEventArgs e)
@@ -61,9 +56,9 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
             }
         }
 
-        private void Edit_Click(object sender, RoutedEventArgs e)
+        private void Add_Workout(object sender, RoutedEventArgs e)
         {
-
+            chooseWorkout.Visibility = Visibility.Visible;
         }
     }
 }

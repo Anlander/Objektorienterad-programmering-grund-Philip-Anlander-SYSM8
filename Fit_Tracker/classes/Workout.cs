@@ -55,7 +55,7 @@
 
         public override int CalculateCalobriesBurned()
         {
-            return Repetitations / CaloriesBurned;
+            return 2;
         }
     }
 }

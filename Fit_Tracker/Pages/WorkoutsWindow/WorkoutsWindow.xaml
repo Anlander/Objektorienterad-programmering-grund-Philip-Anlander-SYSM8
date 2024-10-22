@@ -27,8 +27,13 @@
 
         <StackPanel Grid.Column="1">
             <Button x:Name="details" Content="Show details" Click="details_Click" />
-            <Button x:Name="Add" Content="Add" Command="{Binding AddCommand}" />
-            <Button x:Name="Remove" Content="Remove" Command="{Binding DeleteCommand}" />
+            <Button x:Name="Add" Content="Add" Click="Add_Workout" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="chooseWorkout" Visibility="Collapsed">
+                <Button x:Name="addCardio" Content="Cardio" Command="{Binding AddCardio}" Margin="2" Width="50" Padding="5" />
+                <TextBlock Text="Or"  VerticalAlignment="Center"/>
+                <Button x:Name="addStrength" Content="Strength" Command="{Binding AddStrength}" Margin="2" Width="50" Padding="5" />
+            </StackPanel>
+               <Button x:Name="Remove" Content="Remove" Command="{Binding DeleteCommand}" />
         </StackPanel>
     </Grid>
 </Window>
