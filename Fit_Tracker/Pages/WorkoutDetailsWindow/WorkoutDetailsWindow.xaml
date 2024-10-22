@@ -4,8 +4,28 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Fit_Tracker.Pages.WorkoutDetailsWindow"
+        xmlns:modules="clr-namespace:Fit_Tracker.Modules"
         mc:Ignorable="d"
         Title="WorkoutDetailsWindow" Height="450" Width="800">
+
+    <Window.Resources>
+        <!-- DataTemplate for CardioWorkout -->
+        <DataTemplate x:Key="CardioWorkoutTemplate" DataType="{x:Type modules:CardioWorkout}">
+            <StackPanel>
+                <TextBlock Text="Distance:" FontWeight="Bold" />
+                <TextBlock Text="{Binding Distance, UpdateSourceTrigger=PropertyChanged}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <!-- DataTemplate for StrengthWorkout -->
+        <DataTemplate x:Key="StrengthWorkoutTemplate" DataType="{x:Type modules:StrengthWorkout}">
+            <StackPanel>
+                <TextBlock Text="Repetitions:" FontWeight="Bold" />
+                <TextBlock Text="{Binding Repetitations, UpdateSourceTrigger=PropertyChanged}" />
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="7*"/>
@@ -17,15 +37,31 @@
             Click="Close_Click" FontSize="12" Background="white" Foreground="#DC143C" Padding="5" BorderThickness="2" BorderBrush="#DC143C" />
             <TextBlock Text="Workout Details" FontSize="24" FontWeight="Bold" Margin="0, 0, 0, 20" Foreground="#DC143C" />
             <TextBlock Text="Date:" FontWeight="Bold" />
-            <TextBlock Text="{Binding Date}" />
+            <TextBlock Text="{Binding Date, UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock Text="Type:" FontWeight="Bold"/>
-            <TextBlock Text="{Binding Type}" />
+            <TextBlock Text="{Binding Type, UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock Text="Duration:" FontWeight="Bold"/>
-            <TextBlock Text="{Binding Duration}" />
+            <TextBlock Text="{Binding Duration, UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock Text="Calories Burned:" FontWeight="Bold" />
             <TextBlock Text="{Binding CaloriesBurned, UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock Text="Notes:" FontWeight="Bold" />
-            <TextBlock Text="{Binding Notes}" />
+            <TextBlock Text="{Binding Notes, UpdateSourceTrigger=PropertyChanged}" />
+
+            <!-- ContentControl to display specific workout details -->
+            <ContentControl Content="{Binding}">
+                <ContentControl.Style>
+                    <Style TargetType="ContentControl">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Type}" Value="Cardio">
+                                <Setter Property="ContentTemplate" Value="{StaticResource CardioWorkoutTemplate}" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Type}" Value="Strength">
+                                <Setter Property="ContentTemplate" Value="{StaticResource StrengthWorkoutTemplate}" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ContentControl.Style>
+            </ContentControl>
         </StackPanel>
     </Grid>
 </Window>
