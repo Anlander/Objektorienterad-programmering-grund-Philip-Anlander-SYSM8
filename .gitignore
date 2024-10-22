@@ -9,3 +9,5 @@
 /Fit_Tracker/bin/
 /Fit_Tracker/obj/*
 /Fit_Tracker/bin/*
+/Fit_Tracker/obj/Debug
+/Fit_Tracker/obj/Release
