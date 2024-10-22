@@ -1,26 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\",
+  "WorkspaceRootPath": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\modules\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\modules\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\pages\\workoutdetailswindow\\workoutdetailswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\pages\\workoutdetailswindow\\workoutdetailswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\viewmodels\\workoutswindow\\workoutswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\viewmodels\\workoutswindow\\workoutswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\viewmodels\\register\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\viewmodels\\register\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\pages\\workoutswindow\\workoutswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\pages\\workoutswindow\\workoutswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\fit_tracker\\fit_tracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\pages\\workoutdetailswindow\\workoutdetailswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\pages\\workoutdetailswindow\\workoutdetailswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\pages\\workoutswindow\\workoutswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\pages\\workoutswindow\\workoutswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\pages\\userdetailswindow\\userdetailswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\pages\\userdetailswindow\\userdetailswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\modules\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\modules\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\modules\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\modules\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\mvvm\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\mvvm\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|c:\\users\\panla\\dev\\systemutveckling\\objektorienterad-programmering-grund-philip-anlander-sysm8\\fit_tracker\\viewmodel\\workoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0800A9B4-ECAF-4A82-8CA4-9CD6A44E6432}|Fit_Tracker\\Fit_Tracker.csproj|solutionrelative:fit_tracker\\viewmodel\\workoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +58,162 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WorkoutsWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\ViewModels\\WorkoutsWindow\\WorkoutsWindow.xaml",
-              "RelativeDocumentMoniker": "Fit_Tracker\\ViewModels\\WorkoutsWindow\\WorkoutsWindow.xaml",
-              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\ViewModels\\WorkoutsWindow\\WorkoutsWindow.xaml",
-              "RelativeToolTip": "Fit_Tracker\\ViewModels\\WorkoutsWindow\\WorkoutsWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-17T08:41:29.465Z",
+              "DocumentIndex": 5,
+              "Title": "WorkoutDetailsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Pages\\WorkoutDetailsWindow\\WorkoutDetailsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Fit_Tracker\\Pages\\WorkoutDetailsWindow\\WorkoutDetailsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Pages\\WorkoutDetailsWindow\\WorkoutDetailsWindow.xaml.cs",
+              "RelativeToolTip": "Fit_Tracker\\Pages\\WorkoutDetailsWindow\\WorkoutDetailsWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T07:02:50.387Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\Modules\\Person.cs",
-              "RelativeDocumentMoniker": "Fit_Tracker\\Modules\\Person.cs",
-              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\Modules\\Person.cs",
-              "RelativeToolTip": "Fit_Tracker\\Modules\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T08:14:27.464Z",
+              "Title": "WorkoutDetailsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Pages\\WorkoutDetailsWindow\\WorkoutDetailsWindow.xaml",
+              "RelativeDocumentMoniker": "Fit_Tracker\\Pages\\WorkoutDetailsWindow\\WorkoutDetailsWindow.xaml",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Pages\\WorkoutDetailsWindow\\WorkoutDetailsWindow.xaml",
+              "RelativeToolTip": "Fit_Tracker\\Pages\\WorkoutDetailsWindow\\WorkoutDetailsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-21T16:14:19.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Register.xaml",
-              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\ViewModels\\Register\\Register.xaml",
-              "RelativeDocumentMoniker": "Fit_Tracker\\ViewModels\\Register\\Register.xaml",
-              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\ViewModels\\Register\\Register.xaml*",
-              "RelativeToolTip": "Fit_Tracker\\ViewModels\\Register\\Register.xaml*",
+              "DocumentIndex": 6,
+              "Title": "WorkoutsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Pages\\WorkoutsWindow\\WorkoutsWindow.xaml",
+              "RelativeDocumentMoniker": "Fit_Tracker\\Pages\\WorkoutsWindow\\WorkoutsWindow.xaml",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Pages\\WorkoutsWindow\\WorkoutsWindow.xaml",
+              "RelativeToolTip": "Fit_Tracker\\Pages\\WorkoutsWindow\\WorkoutsWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-17T08:04:18.749Z",
+              "WhenOpened": "2024-10-20T13:07:07.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Fit_Tracker\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\MainWindow.xaml",
-              "RelativeToolTip": "Fit_Tracker\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-17T07:40:11.734Z",
+              "Title": "WorkoutsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Pages\\WorkoutsWindow\\WorkoutsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Fit_Tracker\\Pages\\WorkoutsWindow\\WorkoutsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Pages\\WorkoutsWindow\\WorkoutsWindow.xaml.cs",
+              "RelativeToolTip": "Fit_Tracker\\Pages\\WorkoutsWindow\\WorkoutsWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T13:06:59.708Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Fit_Tracker\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Fit_Tracker\\Fit_Tracker\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Fit_Tracker\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Workout.cs",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Modules\\Workout.cs",
+              "RelativeDocumentMoniker": "Fit_Tracker\\Modules\\Workout.cs",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Modules\\Workout.cs",
+              "RelativeToolTip": "Fit_Tracker\\Modules\\Workout.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAcwCcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T07:40:06.797Z",
+              "WhenOpened": "2024-10-20T12:49:49.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WorkOutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\ViewModel\\WorkOutViewModel.cs",
+              "RelativeDocumentMoniker": "Fit_Tracker\\ViewModel\\WorkOutViewModel.cs",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\ViewModel\\WorkOutViewModel.cs",
+              "RelativeToolTip": "Fit_Tracker\\ViewModel\\WorkOutViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T12:52:51.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Fit_Tracker\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\MainWindow.xaml",
+              "RelativeToolTip": "Fit_Tracker\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-20T12:15:58.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Modules\\Person.cs",
+              "RelativeDocumentMoniker": "Fit_Tracker\\Modules\\Person.cs",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Modules\\Person.cs",
+              "RelativeToolTip": "Fit_Tracker\\Modules\\Person.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwB8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T12:02:32.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\ViewModel\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "Fit_Tracker\\ViewModel\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\ViewModel\\MainWindowViewModel.cs",
+              "RelativeToolTip": "Fit_Tracker\\ViewModel\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:11:40.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Fit_Tracker\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Fit_Tracker\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAmwCAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T12:02:18.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\MVVM\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "Fit_Tracker\\MVVM\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\MVVM\\ViewModelBase.cs",
+              "RelativeToolTip": "Fit_Tracker\\MVVM\\ViewModelBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:31:05.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDetailsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Pages\\UserDetailsWindow\\UserDetailsWindow.xaml",
+              "RelativeDocumentMoniker": "Fit_Tracker\\Pages\\UserDetailsWindow\\UserDetailsWindow.xaml",
+              "ToolTip": "C:\\Users\\panla\\dev\\Systemutveckling\\Objektorienterad-programmering-grund-Philip-Anlander-SYSM8\\Fit_Tracker\\Pages\\UserDetailsWindow\\UserDetailsWindow.xaml",
+              "RelativeToolTip": "Fit_Tracker\\Pages\\UserDetailsWindow\\UserDetailsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-21T16:12:17.124Z",
               "EditorCaption": ""
             }
           ]

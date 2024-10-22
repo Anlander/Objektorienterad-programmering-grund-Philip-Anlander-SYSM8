@@ -48,9 +48,6 @@ namespace Fit_Tracker.ViewModel
             Users.Add(sampleUser1);
             Users.Add(sampleUser2);
 
-
-
-
         }
 
         public Person SelectedItem

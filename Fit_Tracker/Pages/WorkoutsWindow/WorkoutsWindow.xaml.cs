@@ -20,6 +20,17 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
 
         private void details_Click(object sender, RoutedEventArgs e)
         {
+            if (WorkoutList.SelectedItem is Workout selectedWorkout)
+            {
+                WorkoutDetailsWindow.WorkoutDetailsWindow details = new WorkoutDetailsWindow.WorkoutDetailsWindow(selectedWorkout);
+                details.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show($"there is no selected item");
+            }
+
+
 
         }
 
@@ -45,6 +56,7 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
             }
             else
             {
+                // if user haven't selected anything, show this messagebox.
                 MessageBox.Show("Please select a workout to remove.");
             }
         }

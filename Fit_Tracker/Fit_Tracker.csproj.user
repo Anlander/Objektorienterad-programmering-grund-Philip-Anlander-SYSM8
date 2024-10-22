@@ -10,6 +10,12 @@
     <Compile Update="Pages\Register\Register.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\UserDetailsWindow\UserDetailsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\WorkoutDetailsWindow\WorkoutDetailsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\WorkoutsWindow\WorkoutsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +25,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Register\Register.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\UserDetailsWindow\UserDetailsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\WorkoutDetailsWindow\WorkoutDetailsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\WorkoutsWindow\WorkoutsWindow.xaml">
