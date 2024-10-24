@@ -100,8 +100,7 @@ namespace Fit_Tracker.Pages.WorkoutDetailsWindow
             SetBorderThickness(0);
             this.Close();
         }
-
-
+        // Add a method to clear the list in WorkoutDetailsWindow
 
     }
 }

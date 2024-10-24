@@ -55,5 +55,14 @@ namespace Fit_Tracker.ViewModel
                 OnPropertyChanged();
             }
         }
+
+
+        // when loggout is pressed, clear the data so it wont copy in workouts when you logg in.
+        public void Logout()
+        {
+            LoggedInUser = null;
+            Usermanager.ClearUserData();
+        }
+
     }
 }

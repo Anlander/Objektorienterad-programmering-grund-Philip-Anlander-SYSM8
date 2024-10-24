@@ -31,6 +31,8 @@ namespace Fit_Tracker
             if (userExist != null)
             {
                 WorkoutsWindow workOut = new WorkoutsWindow(userExist);
+                UserDetails userDetails = new UserDetails(userExist);
+                userDetails.Show();
                 workOut.Show();
                 Close();
 
@@ -47,7 +49,5 @@ namespace Fit_Tracker
             Register register = new Register(viewModel);
             register.Show();
         }
-
-
     }
 }

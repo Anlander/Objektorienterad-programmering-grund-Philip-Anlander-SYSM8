@@ -1,21 +1,21 @@
-﻿using Fit_Tracker.Classes;
+﻿using Fit_Tracker.classes;
+using Fit_Tracker.Classes;
 using Fit_Tracker.Modules;
-using Fit_Tracker.MVVM.UserControl;
 using Fit_Tracker.ViewModel;
 using System.Windows;
 
 namespace Fit_Tracker.Pages.WorkoutsWindow
 {
-
     public partial class WorkoutsWindow : Window
     {
-        public UserLogout UserLogout { get; internal set; }
 
         public WorkoutsWindow(User currentUser)
         {
             InitializeComponent();
             WorkOutViewModel vm = new WorkOutViewModel(currentUser);
             this.DataContext = vm;
+
+            username.Text = $"Welcome, {currentUser.Username}";
         }
 
         private void details_Click(object sender, RoutedEventArgs e)
@@ -61,6 +61,14 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
         private void Add_Workout(object sender, RoutedEventArgs e)
         {
             chooseWorkout.Visibility = Visibility.Visible;
+        }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            Usermanager.ClearUserData();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
         }
     }
 }

@@ -16,9 +16,9 @@ namespace Fit_Tracker.ViewModel
 
         public WorkOutViewModel(User currentUser)
         {
-
             Workouts = currentUser.Workouts;
         }
+
 
         private Workout selectedWorkout;
         public Workout SelectedWorkout

@@ -3,8 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-       xmlns:userControls="clr-namespace:Fit_Tracker.MVVM.UserControl"
-        xmlns:local="clr-namespace:Fit_Tracker.Modules" xmlns:viewmodel="clr-namespace:Fit_Tracker.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:WorkOutViewModel}"
+        xmlns:local="clr-namespace:Fit_Tracker.Modules" xmlns:viewmodel="clr-namespace:Fit_Tracker.ViewModel"
         mc:Ignorable="d"
         Title="WorkoutsWindow" Height="450" Width="800">
     <Grid>
@@ -17,9 +16,7 @@
             <ColumnDefinition />
             <ColumnDefinition Width="300" />
         </Grid.ColumnDefinitions>
-<userControls:UserLogout>
-            <userControls:UserLogout Username="{Binding LoggedInUser.Username}" />
-        </userControls:UserLogout>
+     
         <ListView Name="WorkoutList" ItemsSource="{Binding Workouts}" SelectedItem="{Binding SelectedWorkout}" Grid.Row="1">
             <ListView.View>
                 <GridView>
@@ -28,16 +25,17 @@
                 </GridView>
             </ListView.View>
         </ListView>
-
+        <TextBlock x:Name="username" VerticalAlignment="Center" FontSize="25" Margin="5" FontWeight="Bold"/>
+        <Button Content="LOGOUT" Click="Logout_Click" Grid.Column="1"  Background="#DC143C" Foreground="White" FontWeight="Bold"/>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <Button x:Name="details" Content="Show details" Click="details_Click" />
-            <Button x:Name="Add" Content="Add" Click="Add_Workout" />
+            <Button x:Name="details" Content="Show details" Click="details_Click" Background="White" Foreground="#DC143C" BorderBrush="#DC143C" Margin="0, 5,0 ,0" />
+            <Button x:Name="Add" Content="Add" Click="Add_Workout" Background="white" Foreground="#DC143C" BorderBrush="#DC143C" Margin="0, 5,0 ,0"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="chooseWorkout" Visibility="Collapsed">
                 <Button x:Name="addCardio" Content="Cardio" Command="{Binding AddCardio}" Margin="2" Width="50" Padding="5" />
                 <TextBlock Text="Or"  VerticalAlignment="Center"/>
                 <Button x:Name="addStrength" Content="Strength" Command="{Binding AddStrength}" Margin="2" Width="50" Padding="5" />
             </StackPanel>
-               <Button x:Name="Remove" Content="Remove" Command="{Binding DeleteCommand}" />
+            <Button x:Name="Remove" Content="Remove" Command="{Binding DeleteCommand}"  Background="white" Foreground="#DC143C" BorderBrush="#DC143C" Margin="0, 5"/>
         </StackPanel>
     </Grid>
 </Window>

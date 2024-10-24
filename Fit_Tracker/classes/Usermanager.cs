@@ -114,5 +114,13 @@ namespace Fit_Tracker.classes
                 adminUser.Workouts.Add(workout);
             }
         }
+
+        public static void ClearUserData()
+        {
+            foreach (var user in _UserDataBase)
+            {
+                user.Workouts.Clear();
+            }
+        }
     }
 }
