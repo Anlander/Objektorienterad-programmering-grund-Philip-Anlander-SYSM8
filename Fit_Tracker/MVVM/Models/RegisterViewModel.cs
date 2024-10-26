@@ -39,6 +39,7 @@ namespace Fit_Tracker.MVVM.Models
             }
         }
 
+
         public ICommand RegisterCommand { get; }
 
         public RegisterViewModel()

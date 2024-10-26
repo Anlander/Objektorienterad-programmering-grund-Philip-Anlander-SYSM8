@@ -3,7 +3,6 @@ using System.Windows;
 
 namespace Fit_Tracker.MVVM.Views
 {
-
     public partial class Register : Window
     {
         private MainWindowViewModel mainWindowViewModel;
@@ -19,9 +18,27 @@ namespace Fit_Tracker.MVVM.Views
             string password = passwordBox.Text;
             string country = countryBox.Text;
 
-            mainWindowViewModel.AddUser(username, password, country);
-            this.Close();
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(country))
+            {
+                MessageBox.Show("Please fill in all fields");
+                return;
+            }
+            else if (password.Length < 6)
+            {
+                MessageBox.Show("Password must be at least 6 characters long");
+                return;
+            }
+            else if (mainWindowViewModel.UserExists(username))
+            {
+                MessageBox.Show("Username already exists");
+                return;
+            }
 
+            mainWindowViewModel.AddUser(username, password, country);
+
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
         }
     }
 }

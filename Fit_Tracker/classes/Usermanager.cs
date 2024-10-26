@@ -12,6 +12,7 @@ namespace Fit_Tracker.classes
                 new User("philip", "123", "Sweden")
             };
 
+
         public static ObservableCollection<User> GetUsers()
         {
             return _UserDataBase;

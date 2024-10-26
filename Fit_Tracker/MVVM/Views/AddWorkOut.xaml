@@ -1,0 +1,55 @@
+﻿<Window x:Class="Fit_Tracker.MVVM.Views.AddWorkOut"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fit_Tracker.MVVM.Views"
+        mc:Ignorable="d"
+        Title="AddWorkOut" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="500" Margin="0,10, 0, 0"  x:Name="chooseWorkout">
+            <Label Content="What type of Workout?" />
+            <ComboBox x:Name="OptionsComboBox" SelectedValue="Cardio" SelectionChanged="OptionsComboBox_SelectionChanged">
+                <ComboBoxItem Content="Cardio" Tag="Cardio"/>
+                <ComboBoxItem Content="Strength" Tag="Strength"/>
+            </ComboBox>
+        </StackPanel>
+     <!-- CONTENT HERE TO WRITE in information  -->
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="500" x:Name="CardioWorkOut" Visibility="Collapsed">
+            <Label Content="Date" />
+            <DatePicker x:Name="Date" />
+            <Label Content="Type" />
+            <TextBox x:Name="Type" />
+            <Label Content="Duration" />
+            <TextBox x:Name="Duration" />
+            <Label Content="Calories Burned" />
+            <TextBox x:Name="CaloriesBurned" />
+            <Label Content="Distance" />
+            <TextBox x:Name="Distance" />
+            <Label Content="Notes" />
+            <TextBox x:Name="Notes" />
+            <Button Content="Add workout" Click="ButtonCardio_Click" Margin="0, 10" Width="100"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="500" x:Name="StrengthWorkout" Visibility="Collapsed">
+            <Label Content="Date" />
+            <DatePicker x:Name="Strength_Date" />
+            <Label Content="Type" />
+            <TextBox x:Name="Strength_Type" />
+            <Label Content="Duration" />
+            <TextBox x:Name="Strength_Duration" />
+            <Label Content="Calories Burned" />
+            <TextBox x:Name="Strength_CaloriesBurned" />
+            <Label Content="Repetitations" />
+            <TextBox x:Name="Strength_Repetitations" />
+            <Label Content="Notes" />
+            <TextBox x:Name="Strength_Notes" />
+            <Button Content="Add workout" Click="ButtonStrength_Click" Margin="0, 10" Width="100"/>
+        </StackPanel>
+    </Grid>
+</Window>

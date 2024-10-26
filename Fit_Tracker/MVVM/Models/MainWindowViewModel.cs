@@ -13,7 +13,6 @@ namespace Fit_Tracker.ViewModel
         private Person selectedItem;
         private User _loggedInUser;
 
-
         public MainWindowViewModel()
         {
             userManager = new Usermanager();
@@ -36,6 +35,11 @@ namespace Fit_Tracker.ViewModel
             }
         }
 
+        public bool UserExists(string username)
+        {
+            return Users.Any(u => u.Username == username);
+        }
+
         public Person SelectedItem
         {
             get { return selectedItem; }
@@ -56,13 +60,11 @@ namespace Fit_Tracker.ViewModel
             }
         }
 
-
         // when loggout is pressed, clear the data so it wont copy in workouts when you logg in.
         public void Logout()
         {
             LoggedInUser = null;
             Usermanager.ClearUserData();
         }
-
     }
 }

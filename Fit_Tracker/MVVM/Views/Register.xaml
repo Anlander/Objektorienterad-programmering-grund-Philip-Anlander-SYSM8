@@ -12,8 +12,13 @@
             <TextBox x:Name="usernameBox" Width="200"/>
             <Label Content="Password" />
             <TextBox x:Name="passwordBox" Width="200"/>
-            <Label Content="Country" />
-            <TextBox x:Name="countryBox" Width="200" />
+            <Label Content="Select Country" />
+            <ComboBox x:Name="countryBox" SelectedValue="{Binding Country, UpdateSourceTrigger=PropertyChanged}">
+                <ComboBoxItem Content="USA" />
+                <ComboBoxItem Content="Canada" />
+                <ComboBoxItem Content="Sweden" />
+                <ComboBoxItem Content="Denmark" />
+            </ComboBox>
             <StackPanel>
                 <Button Content="Register" Margin="0,5" Click="Register_Click"/>
             </StackPanel>

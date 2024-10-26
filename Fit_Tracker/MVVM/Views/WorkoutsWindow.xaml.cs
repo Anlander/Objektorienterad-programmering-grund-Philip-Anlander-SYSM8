@@ -1,6 +1,7 @@
 ﻿using Fit_Tracker.classes;
 using Fit_Tracker.Classes;
 using Fit_Tracker.Modules;
+using Fit_Tracker.MVVM.Views;
 using Fit_Tracker.ViewModel;
 using System.Windows;
 
@@ -8,6 +9,7 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
 {
     public partial class WorkoutsWindow : Window
     {
+        private User currentUser;
 
         public WorkoutsWindow(User currentUser)
         {
@@ -16,6 +18,7 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
             this.DataContext = vm;
 
             username.Text = $"Welcome, {currentUser.Username}";
+            this.currentUser = currentUser;
         }
 
         private void details_Click(object sender, RoutedEventArgs e)
@@ -35,6 +38,15 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
                 MessageBox.Show($"There is no selected item");
             }
         }
+
+
+        private void UserDetails_Click(object sender, RoutedEventArgs e)
+        {
+            UserDetails userDetails = new UserDetails(currentUser);
+            userDetails.Show();
+
+        }
+
 
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
@@ -60,7 +72,8 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
 
         private void Add_Workout(object sender, RoutedEventArgs e)
         {
-            chooseWorkout.Visibility = Visibility.Visible;
+            AddWorkOut addWorkOut = new AddWorkOut(currentUser);
+            addWorkOut.Show();
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)

@@ -6,6 +6,7 @@ namespace Fit_Tracker.MVVM.Views
 
     public partial class UserDetails : Window
     {
+
         public UserDetails(User user)
         {
             InitializeComponent();
@@ -16,6 +17,7 @@ namespace Fit_Tracker.MVVM.Views
         {
             username.IsEnabled = show;
             password.IsEnabled = show;
+            countryComboBox.IsEnabled = show;
             cfmPassword.IsEnabled = show;
             Save.IsEnabled = show;
         }
@@ -36,6 +38,5 @@ namespace Fit_Tracker.MVVM.Views
             cfmPassword.Clear();
             EnableEdit(false);
         }
-
     }
 }

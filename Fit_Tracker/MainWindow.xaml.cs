@@ -31,15 +31,13 @@ namespace Fit_Tracker
             if (userExist != null)
             {
                 WorkoutsWindow workOut = new WorkoutsWindow(userExist);
-                UserDetails userDetails = new UserDetails(userExist);
-                userDetails.Show();
                 workOut.Show();
                 Close();
 
             }
             else
             {
-                MessageBox.Show("Dosen't Exists!");
+                MessageBox.Show("Please fill in correct information", "User dosen't exist or wrong info", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
 
         }
@@ -48,6 +46,7 @@ namespace Fit_Tracker
             var viewModel = (MainWindowViewModel)DataContext;
             Register register = new Register(viewModel);
             register.Show();
+            Close();
         }
     }
 }

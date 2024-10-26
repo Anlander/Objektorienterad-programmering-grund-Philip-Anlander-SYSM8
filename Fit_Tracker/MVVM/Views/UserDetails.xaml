@@ -15,6 +15,14 @@
             <TextBox x:Name="password" Text="{Binding password, UpdateSourceTrigger=PropertyChanged}" IsEnabled="false"  />
             <Label Content="Confirm password" />
             <TextBox x:Name="cfmPassword" IsEnabled="false" />
+
+            <Label Content="Change country" />
+            <ComboBox x:Name="countryComboBox" IsEnabled="false" SelectedValue="{Binding Country, UpdateSourceTrigger=PropertyChanged}">
+                <ComboBoxItem Content="USA" />
+                <ComboBoxItem Content="Canada" />
+                <ComboBoxItem Content="Sweden" />
+                <ComboBoxItem Content="Denmark" />
+            </ComboBox>
             <StackPanel Margin="0,10">
               <Button Content="Edit" Click="EditDetails_Click" />
                 <Button x:Name="Save" Content="Save" Click="SaveDetails_Click" IsEnabled="false" />
