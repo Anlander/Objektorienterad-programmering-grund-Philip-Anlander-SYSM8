@@ -6,26 +6,36 @@
         xmlns:local="clr-namespace:Fit_Tracker.MVVM.Views"
         mc:Ignorable="d"
         Title="UserDetails" Height="450" Width="800">
+    <Window.Resources>
+        <!--This is the style for the password text box, I was going to use PasswordBox, but I had already used the logic of the textbox.-->
+        <Style x:Key="PasswordTextBoxStyle" TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Segoe UI Symbol" />
+            <Setter Property="Foreground" Value="Black" />
+        </Style>
+    </Window.Resources>
     <Grid>
        
         <StackPanel Width="200" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Username" />
-            <TextBox x:Name="username" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" IsEnabled="false"  />
+            <TextBox x:Name="username" Text="{Binding Username, UpdateSourceTrigger=Explicit}" 
+                     Style="{StaticResource PasswordTextBoxStyle}" Margin="0,5" IsEnabled="false"  />
             <Label Content="Password" />
-            <TextBox x:Name="password" Text="{Binding password, UpdateSourceTrigger=PropertyChanged}" IsEnabled="false"  />
+            <TextBox x:Name="password" Text="{Binding Password, UpdateSourceTrigger=Explicit}" 
+                     Style="{StaticResource PasswordTextBoxStyle}" IsEnabled="false"  />
             <Label Content="Confirm password" />
             <TextBox x:Name="cfmPassword" IsEnabled="false" />
 
             <Label Content="Change country" />
-            <ComboBox x:Name="countryComboBox" IsEnabled="false" SelectedValue="{Binding Country, UpdateSourceTrigger=PropertyChanged}">
+            <ComboBox x:Name="countryComboBox" IsEnabled="false" SelectedValue="{Binding Country, UpdateSourceTrigger=Explicit}">
                 <ComboBoxItem Content="USA" />
                 <ComboBoxItem Content="Canada" />
                 <ComboBoxItem Content="Sweden" />
                 <ComboBoxItem Content="Denmark" />
             </ComboBox>
             <StackPanel Margin="0,10">
-              <Button Content="Edit" Click="EditDetails_Click" />
+                <Button Content="Edit" Click="EditDetails_Click" />
                 <Button x:Name="Save" Content="Save" Click="SaveDetails_Click" IsEnabled="false" />
+                <Button x:Name="Cancel" Content="Cancel" Click="CancelDetails_Click"  />
             </StackPanel>
         </StackPanel>
     </Grid>

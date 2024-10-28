@@ -49,7 +49,6 @@ namespace Fit_Tracker.MVVM.Models
 
         private void Register()
         {
-            // Logic to register the user
         }
     }
 }

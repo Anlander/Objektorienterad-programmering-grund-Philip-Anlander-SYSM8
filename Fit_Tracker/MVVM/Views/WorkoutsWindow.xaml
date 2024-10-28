@@ -26,8 +26,8 @@
             </ListView.View>
         </ListView>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-          <TextBlock x:Name="username" VerticalAlignment="Center" FontSize="25" Margin="5" FontWeight="Bold"/>
-            <TextBlock x:Name="country" VerticalAlignment="Center" FontSize="25" Margin="5" FontWeight="Bold" Text="{Binding Country}"/>
+            <TextBlock x:Name="welcomeText" Text="Welcome: " FontSize="24"/>
+            <TextBlock x:Name="username" Text="{Binding CurrentUser.Username}" FontSize="24" Margin="5, 0" />
             <Button Content="User details" Click="UserDetails_Click" Width="120" Height="20" Background="White" Foreground="#DC143C" BorderBrush="#DC143C"/>
         </StackPanel>
         <Button Content="LOGOUT" Click="Logout_Click" Grid.Column="1"  Background="#DC143C" Foreground="White" FontWeight="Bold" VerticalAlignment="Center"/>

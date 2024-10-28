@@ -17,7 +17,6 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
             WorkOutViewModel vm = new WorkOutViewModel(currentUser);
             this.DataContext = vm;
 
-            username.Text = $"Welcome, {currentUser.Username}";
             this.currentUser = currentUser;
         }
 

@@ -1,5 +1,6 @@
 ﻿using Fit_Tracker.Classes;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace Fit_Tracker.MVVM.Views
 {
@@ -11,6 +12,7 @@ namespace Fit_Tracker.MVVM.Views
         {
             InitializeComponent();
             this.DataContext = user;
+
         }
 
         private void EnableEdit(bool show)
@@ -27,6 +29,15 @@ namespace Fit_Tracker.MVVM.Views
         {
             EnableEdit(true);
         }
+
+        private void CancelDetails_Click(object sender, RoutedEventArgs e)
+        {
+            var user = (User)this.DataContext;
+            username.Text = user.Username;
+            this.Close();
+        }
+
+
         private void SaveDetails_Click(object sender, RoutedEventArgs e)
         {
             if (password.Text != cfmPassword.Text)
@@ -34,9 +45,22 @@ namespace Fit_Tracker.MVVM.Views
                 MessageBox.Show("Passwords do not match");
                 return;
             }
-            password.Clear();
-            cfmPassword.Clear();
+            if (password.Text.Length <= 5)
+            {
+                MessageBox.Show("Passwords needs to be atleast 6");
+                return;
+            }
+
+            username.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
+            countryComboBox.GetBindingExpression(ComboBox.SelectedValueProperty)?.UpdateSource();
+            password.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
+
+
+            // Optional: Disable save button after saving
+            Save.IsEnabled = false;
+
             EnableEdit(false);
+            this.Close();
         }
     }
 }

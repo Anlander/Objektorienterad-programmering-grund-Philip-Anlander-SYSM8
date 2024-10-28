@@ -14,7 +14,7 @@
             <Label Content="Username" />
             <TextBox x:Name="UserName" Text="{Binding SelectedItem.Username, UpdateSourceTrigger=PropertyChanged}"
                      Margin="0,5" Padding="5" BorderThickness="2"  />
-            <Label Content="Password" />
+            
             <TextBox x:Name="PassWord" Text="{Binding SelectedItem.Password, UpdateSourceTrigger=PropertyChanged}" 
                      Margin="0,5" Padding="5" BorderThickness="2" />
             <Button x:Name="SignInBtn" Content="Sign in" Background="#DC143C" Foreground="White" Click="SignInBtn_Click" FontWeight="Bold" />

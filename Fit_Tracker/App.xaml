@@ -4,6 +4,15 @@
              xmlns:local="clr-namespace:Fit_Tracker"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        
+        <!-- Define MaskedTextBoxTemplate -->
+        <ControlTemplate x:Key="MaskedTextBoxTemplate" TargetType="TextBox">
+            <PasswordBox PasswordChar="*"
+                         Password="{Binding Text, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        </ControlTemplate>
+
+        <!-- Optional: Define a style to apply the template to all TextBoxes with a specific style key -->
+        <Style x:Key="MaskedTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Template" Value="{StaticResource MaskedTextBoxTemplate}" />
+        </Style>
     </Application.Resources>
 </Application>
