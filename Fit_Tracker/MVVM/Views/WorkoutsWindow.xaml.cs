@@ -82,5 +82,14 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
             mainWindow.Show();
             Close();
         }
+
+        private void ShowPopup_Click(object sender, RoutedEventArgs e)
+        {
+            show_appDetails.IsOpen = true;
+        }
+        private void ClosePopup_Click(object sender, RoutedEventArgs e)
+        {
+            show_appDetails.IsOpen = false;
+        }
     }
 }
