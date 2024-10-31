@@ -14,14 +14,15 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
         public WorkoutsWindow(User currentUser)
         {
             InitializeComponent();
+            // Get current user and set it to the datacontext
             WorkOutViewModel vm = new WorkOutViewModel(currentUser);
             this.DataContext = vm;
-
             this.currentUser = currentUser;
         }
 
         private void details_Click(object sender, RoutedEventArgs e)
         {
+            // check what type of workout is selected
             if (WorkoutList.SelectedItem is CardioWorkout selectedCardioWorkout)
             {
                 WorkoutDetailsWindow.WorkoutDetailsWindow details = new WorkoutDetailsWindow.WorkoutDetailsWindow(selectedCardioWorkout);
@@ -39,6 +40,7 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
         }
 
 
+        // Open the user details window
         private void UserDetails_Click(object sender, RoutedEventArgs e)
         {
             UserDetails userDetails = new UserDetails(currentUser);
@@ -69,12 +71,16 @@ namespace Fit_Tracker.Pages.WorkoutsWindow
             }
         }
 
+
+        // Add workout to current user
         private void Add_Workout(object sender, RoutedEventArgs e)
         {
             AddWorkOut addWorkOut = new AddWorkOut(currentUser);
             addWorkOut.Show();
         }
 
+
+        // Logout and clear user data to prevent saved content in ListView.
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             Usermanager.ClearUserData();

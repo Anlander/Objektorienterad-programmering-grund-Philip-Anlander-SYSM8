@@ -28,21 +28,28 @@ namespace Fit_Tracker.Pages.WorkoutDetailsWindow
         // function for EnableInputFields
         private void EnableInputFields(bool show)
         {
-            date.IsEnabled = show;
-            type.IsEnabled = show;
-            duration.IsEnabled = show;
-            caloriesBurned.IsEnabled = show;
-            notes.IsEnabled = show;
-            if (selectedWorkout is CardioWorkout)
+            try
             {
-                repetitations.Visibility = Visibility.Collapsed;
-                distance.IsEnabled = show;
-
+                date.IsEnabled = show;
+                type.IsEnabled = show;
+                duration.IsEnabled = show;
+                caloriesBurned.IsEnabled = show;
+                notes.IsEnabled = show;
+                if (selectedWorkout is CardioWorkout)
+                {
+                    repetitations.Visibility = Visibility.Collapsed;
+                    distance.IsEnabled = show;
+                }
+                else if (selectedWorkout is StrengthWorkout)
+                {
+                    distance.Visibility = Visibility.Collapsed;
+                    repetitations.IsEnabled = show;
+                }
             }
-            else if (selectedWorkout is StrengthWorkout)
+            catch (Exception ex)
             {
-                distance.Visibility = Visibility.Collapsed;
-                repetitations.IsEnabled = show;
+                // Handle the exception here
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

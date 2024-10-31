@@ -15,6 +15,8 @@ namespace Fit_Tracker.MVVM.Views
 
         }
 
+
+        // Enable or disable the edit mode
         private void EnableEdit(bool show)
         {
             username.IsEnabled = show;
@@ -30,6 +32,7 @@ namespace Fit_Tracker.MVVM.Views
             EnableEdit(true);
         }
 
+        // Cancel the changes
         private void CancelDetails_Click(object sender, RoutedEventArgs e)
         {
             var user = (User)this.DataContext;
@@ -38,29 +41,36 @@ namespace Fit_Tracker.MVVM.Views
         }
 
 
+
+        // Save the new changes & check validation
         private void SaveDetails_Click(object sender, RoutedEventArgs e)
         {
-            if (password.Text != cfmPassword.Text)
+            try
             {
-                MessageBox.Show("Passwords do not match");
-                return;
+                if (password.Text != cfmPassword.Text)
+                {
+                    MessageBox.Show("Passwords do not match");
+                    return;
+                }
+                if (password.Text.Length <= 5)
+                {
+                    MessageBox.Show("Passwords needs to be at least 6");
+                    return;
+                }
+
+                username.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
+                countryComboBox.GetBindingExpression(ComboBox.SelectedValueProperty)?.UpdateSource();
+                password.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
+
+                Save.IsEnabled = false;
+
+                EnableEdit(false);
+                this.Close();
             }
-            if (password.Text.Length <= 5)
+            catch (Exception ex)
             {
-                MessageBox.Show("Passwords needs to be atleast 6");
-                return;
+                MessageBox.Show("An error occurred: " + ex.Message);
             }
-
-            username.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
-            countryComboBox.GetBindingExpression(ComboBox.SelectedValueProperty)?.UpdateSource();
-            password.GetBindingExpression(TextBox.TextProperty)?.UpdateSource();
-
-
-            // Optional: Disable save button after saving
-            Save.IsEnabled = false;
-
-            EnableEdit(false);
-            this.Close();
         }
     }
 }

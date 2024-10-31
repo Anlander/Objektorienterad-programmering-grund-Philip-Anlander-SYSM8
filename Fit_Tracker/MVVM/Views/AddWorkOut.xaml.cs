@@ -23,6 +23,7 @@ namespace Fit_Tracker.MVVM.Views
 
         private void ButtonCardio_Click(object sender, RoutedEventArgs e)
         {
+            // Check if the fields are empty
             if (string.IsNullOrWhiteSpace(Date.Text) ||
                   string.IsNullOrWhiteSpace(CaloriesBurned.Text) ||
                   string.IsNullOrWhiteSpace(Notes.Text) ||
@@ -77,6 +78,8 @@ namespace Fit_Tracker.MVVM.Views
 
         }
 
+
+        // Show or hide the correct workout type
         private void OptionsComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             // Get the specific item that was selected
